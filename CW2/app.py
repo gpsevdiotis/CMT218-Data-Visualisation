@@ -150,7 +150,7 @@ def update_figures(selected_output, selected_variable):
     y=trendline_y, 
     mode='lines', 
     line=dict(color='black', width=2), 
-    name='Ordinary Least Squares',
+    name='OLS Trendline',
     hovertemplate='<br>'.join([
         'Age: %{x}',
         'BMI: %{y}',
