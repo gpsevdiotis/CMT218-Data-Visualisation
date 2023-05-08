@@ -29,7 +29,7 @@ fig = px.scatter(df, x='Age', y='BMI', color='Outcome', trendline='ols',trendlin
 
 # Define the layout
 app.layout = html.Div([
-    html.H1('Data Analysis and Visualisation Creation', style={'text-align': 'center', 'font-family': 'Helvetica Neue, sans-serif'}),
+    html.H1('Data Analysis and Visualization Creation', style={'text-align': 'center', 'font-family': 'Helvetica Neue, sans-serif'}),
     html.Hr(),
     html.H2('BMI and Age relationship by Diabetes Outcome', style={'text-align': 'center', 'font-weight': 'normal', 'font-family': 'Helvetica Neue, sans-serif'}),
     html.Br(),
@@ -119,7 +119,7 @@ def update_figures(selected_output, selected_variable):
         hovertemplate='<br>'.join([
             'Age: %{x}',
             'BMI: %{y}',
-            'Outcome: Non-Diabetic'
+            'Patient: Non-Diabetic'
         ]),
         legendgroup='Non-Diabetic',
         legendrank=1
@@ -135,7 +135,7 @@ def update_figures(selected_output, selected_variable):
         hovertemplate='<br>'.join([
             'Age: %{x}',
             'BMI: %{y}',
-            'Outcome: Diabetic'
+            'Patient: Diabetic'
         ]),
         legendgroup='Diabetic',
         legendrank=2
